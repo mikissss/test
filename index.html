@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+  <script>
+    $(function () {
+      var clipboard = new Clipboard('.button');
+    });
+  </script>
+
+  <title>FIND YOUR COLOR</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="css/style.css" media="all" rel="stylesheet" />
+  <link href="css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <nav>
+      <ul>
+        <li>
+          <h2><a href="index.html"><img src="img/icon.png" alt="">FIND YOUR COLOR</a></h2></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <h1>FIND YOUR COLOR</h1>
+    <div class="pattern"></div>
+    <div class="grad2 full-blur">FIND YOUR COLOR
+      <div class="arrow"><img src="img/arrow.png" alt=""></div>
+    </div>
+  </main>
+  <section>
+    <video src="http://ringdesign.site44.com/img/nc52809.mp4" autoplay loop>
+    </video>
+    <div id="container">
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/benihi.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_shoujyouhi.jpg" data-lightbox="1" data-title="猩々緋（しょうじょうひ）">SHOJYOHI</a></p>
+              <p class="description">猩々緋</p>
+              <!-- コピー対象 -->
+              <input id="syojyohi" value="#E83015" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#syojyohi">
+                copy
+              </button>
+              <!--<p class="description">#E65639</p>-->
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/suou.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title"><a href="img/description_shinshu.jpg" data-lightbox="2" data-title="真朱（しんしゅ）">SHINSYU</a></p>
+              <p class="description">真朱</p>
+              <!-- コピー対象 -->
+              <input id="shinsyu" value="#AB3B3A" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#shinsyu">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/kurenai.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_karakurenai.jpg" data-lightbox="3" data-title="韓紅（からくれない）">KARAKURENAI</a></p>
+              <p class="description">韓紅花</p>
+              <!-- コピー対象 -->
+              <input id="karakurenai" value="#D0104C" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#karakurenai">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/kinnaka.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_akakuchiba.jpg" data-lightbox="4" data-title="赤朽葉（あかくちば）">AKAKUCHIBA</a></p>
+              <p class="description">赤朽葉</p>
+              <!-- コピー対象 -->
+              <input id="sohi" value="#E86942" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#sohi">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/terigaki.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kakiiro.jpg" data-lightbox="5" data-title="柿色（かきいろ）">KAKIIRO</a></p>
+              <p class="description">柿色</p>
+              <!-- コピー対象 -->
+              <input id="ohni" value="#DD472F" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ohni">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/nikkeiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_shinonome.jpg" data-lightbox="6" data-title="東雲 （しののめ）">SHINONOME</a></p>
+              <p class="description">東雲色</p>
+              <!-- コピー対象 -->
+              <input id="kanzo" value="#F19072" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#kanzo">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/kariyasuiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kariyasu.jpg" data-lightbox="7" data-title="刈安 （かりやす）">KARIYASU</a></p>
+              <p class="description">刈安</p>
+              <!-- コピー対象 -->
+              <input id="nanohana" value="#F7D94C" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#nanohana">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/kutinasiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kuchinashi.jpg" data-lightbox="8" data-title="梔子 （くちなし）">KUCHINASHI</a></p>
+              <p class="description">梔子</p>
+              <!-- コピー対象 -->
+              <input id="tamamorokoshi" value="#E8B647" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#tamamorokoshi">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/karasiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_choji.jpg" data-lightbox="9" data-title="丁子 （ちょうじ）">CHOJI</a></p>
+              <p class="description">丁子</p>
+              <!-- コピー対象 -->
+              <input id="hajizome" value="#EFCD9A" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#hajizome">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/moegi.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_wakanae.jpg" data-lightbox="10" data-title="若苗（わかなえ）">WAKANAE</a></p>
+              <p class="description">若苗</p>
+              <!-- コピー対象 -->
+              <input id="hiwa" value="#BEC23F" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#hiwa">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/oitake.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_moegi.jpg" data-lightbox="11" data-title="萌黄（もえぎ）">MOEGI</a></p>
+              <p class="description">萌木</p>
+              <!-- コピー対象 -->
+              <input id="oitake" value="#87B762" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#oitake">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/tokiwairo.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_tokiwa.jpg" data-lightbox="12" data-title="常盤（ときわ）">TOKIWA</a></p>
+              <p class="description">常盤</p>
+              <!-- コピー対象 -->
+              <input id="tokiwa" value="#0C843D" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#tokiwa">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/biroudo.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_onandotya.jpg" data-lightbox="13" data-title="御納戸茶（おなんどちゃ）">ONANDOCHA</a></p>
+              <p class="description">御納戸茶</p>
+              <!-- コピー対象 -->
+              <input id="biroudo" value="#2f5d50" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#biroudo">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/moegiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_senzaimidori.jpg" data-lightbox="14" data-title="千歳緑（せんざいみどり）">SENZAIMIDORI</a></p>
+              <p class="description">千歳緑</p>
+              <!-- コピー対象 -->
+              <input id="ryokusho" value="#24936E" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ryokusho">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/tokusa.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_miruiro.jpg" data-lightbox="15" data-title="海松色（みるいろ）">MIRUIRO</a></p>
+              <p class="description">海松色</p>
+              <!-- コピー対象 -->
+              <input id="tokusa" value="#596327" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#tokusa">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/gunjyo.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kamenozoki.jpg" data-lightbox="16" data-title="瓶覗（かめのぞき）">KAMENOZOKI</a></p>
+              <p class="description">瓶覗</p>
+              <!-- コピー対象 -->
+              <input id="gunjyo" value="#ABD6DD" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#gunjyo">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/asagi.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_hanada.jpg" data-lightbox="17" data-title="縹色（はなだいろ）">HANADAIRO</a></p>
+              <p class="description">縹色</p>
+              <!-- コピー対象 -->
+              <input id="asagi" value="#0086AD" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#asagi">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/wasurenagusa.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_tsuyukusa.jpg" data-lightbox="18" data-title="露草（つゆくさ）">TSUYUKUSA</a></p>
+              <p class="description">露草色</p>
+              <!-- コピー対象 -->
+              <input id="wasurenagusa" value="#6ABBBF" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#wasurenagusa">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/aiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_gunjyo.jpg" data-lightbox="19" data-title="群青（ぐんじょう）">GUNJYO</a></p>
+              <p class="description">群青</p>
+              <!-- コピー対象 -->
+              <input id="ai" value="#224B8F" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ai">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/rurikonn.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_rurikon.jpg" data-lightbox="20" data-title="瑠璃紺（るりこん）">RURIKON</a></p>
+              <p class="description">瑠璃紺</p>
+              <!-- コピー対象 -->
+              <input id="hiwa" value="#2B4099" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#hiwa">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/konnpeki.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_rurI.jpg" data-lightbox="21" data-title="瑠璃（るり）">RURI</a></p>
+              <p class="description">瑠璃</p>
+              <!-- コピー対象 -->
+              <input id="konpeki" value="#0e5489" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#konpeki">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/ikkonzome.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_sango.jpg" data-lightbox="22" data-title=" 珊瑚色（さんごいろ）">SANGOIRO</a></p>
+              <p class="description">珊瑚色</p>
+              <!-- コピー対象 -->
+              <input id="ikkonzome" value="#F5B1AA" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ikkonzome">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/benimurasaki.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_akamurasaki.jpg" data-lightbox="23" data-title="赤紫（赤紫）">AKAMURASAKI</a></p>
+              <p class="description">赤紫</p>
+              <!-- コピー対象 -->
+              <input id="benimurasaki" value="#D576E5" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#benimurasaki">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/karakurenai.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_momo.jpg" data-lightbox="24" data-title="桃花色（ももはないろ）">MOMOHANAIRO</a></p>
+              <p class="description">桃花色</p>
+              <!-- コピー対象 -->
+              <input id="umemurasaki" value="#C9619F" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#umemurasaki">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/sionniro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_edo.jpg" data-lightbox="25" data-title="江戸紫（えどむらさき）">EDOMURASAKI</a></p>
+              <p class="description">江戸紫</p>
+              <!-- コピー対象 -->
+              <input id="shioniro" value="#745399" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#shioniro">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/ayame.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_ebi.jpg" data-lightbox="26" data-title="葡萄染（えびぞめ）">EBIZOME</a></p>
+              <p class="description">葡萄染</p>
+              <!-- コピー対象 -->
+              <input id="ayame" value="#82487B" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ayame">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/pa.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kakitsubata.jpg" data-lightbox="27" data-title="杜若（かきつばた）">KAKITSUBATA</a></p>
+              <p class="description">杜若</p>
+              <!-- コピー対象 -->
+              <input id="botan" value="#9B65A8" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#botan">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <div class="box">
+          <img src="img/tetuonanndo.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_aonibi.jpg" data-lightbox="28" data-title="青鈍（あおにび）">AONIBI</a></p>
+              <p class="description">青鈍</p>
+              <!-- コピー対象 -->
+              <input id="aonibi" value="#3E5668" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#aonibi">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/karasubairo.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_usuzumi.jpg" data-lightbox="29" data-title="薄墨色（うすずみいろ）">USUZUMIIRO</a></p>
+              <p class="description">薄墨色</p>
+              <!-- コピー対象 -->
+              <input id="ro" value="#969695" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#ro">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/nezumiiro.jpg" alt="" />
+          <div class="overlay">
+            <div class="contents">
+              <p class="title">
+                <a href="img/description_kurotsurubami.jpg" data-lightbox="30" data-title="黒橡（くろつるばみ）">KUROTSURUBAMI</a></p>
+              <p class="description">黒橡</p>
+              <!-- コピー対象 -->
+              <input id="sumi" value="#1E1B1A" size="0">
+              <!-- コピーボタン -->
+              <button class="button" data-clipboard-target="#sumi">
+                copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+</body>
+
+</html>
